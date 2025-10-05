@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreekCodes - Web Development Company</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>BreekCodes</h1>
+    <nav>
+      <a href="#home">Home</a>|
+      <a href="#about">About</a>|
+      <a href="#services">Services</a>|
+      <a href="#portfolio">Portfolio</a>|
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="direct-icon">
+    <a href=""><img src="./photos/whatsapp.png" alt="whatsapp"></a>
+    <a href=""><img src="./photos/instagram.png" alt="instagram"></a>
+    <a href=""><img src="./photos/gmail.png" alt="gmail"></a>
+  </div>
+
+  <!-- hero section -->
+  <section class="hero" id="home">
+    <h2>We Build Modern Web Experiences</h2>
+    <p>
+      At BreekCodes, we craft powerful, fast, and stunning websites that help your business grow.
+    </p>
+
+    <div class="buttons">
+      <div>
+        <label for="popup-hire" class="btn-join">Boook a Consultation</label>
+
+        <input type="checkbox" id="popup-hire">
+        <input type="checkbox" id="popup-thanks">
+
+        <div class="popup popup-hire">
+          <div class="popup-content">
+            <h2>Book a Consultation</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Company Email" required>
+            <input type="text" placeholder=" Your Company / Organization">
+            <select required>
+              <option value="" disabled selected>Project Type</option>
+              <option>Website</option>
+              <option>Web App</option>
+              <option>Mobile App</option>
+              <option>E-commerce</option>
+              <option>Other</option>
+            </select>
+            <select required>
+              <option value="" disabled selected>Budget Range</option>
+              <option>&lt; $1000</option>
+              <option>$1000 – $5000</option>
+              <option>$5000+</option>
+            </select>
+            <textarea rows="4" placeholder="Describe your project..." required></textarea>
+
+            <label style="border-top: 20px;" for="popup-thanks" class="btn"
+              onclick="document.getElementById('popup-hire').checked=false; ">Get Free Consultation</label>
+          </div>
+        </div>
+
+        <div class="popup popup-thanks">
+          <div class="popup-content">
+            <h2>Thank You!</h2>
+            <p>Thank you for connecting with us!<br>We will contact you very soon 🚀</p>
+            <label for="popup-thanks" class="close-btn">Close</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- about section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2 class="about-title">About BreekCodes</h2>
+      <p class="about-subtitle">Discover the passion, expertise, and innovation behind our code.</p>
+
+      <div class="about-page">
+        <h3>Our Story</h3>
+        <p>BreekCodes was founded on a simple yet powerful idea: to bridge the gap between brilliant ideas and
+          exceptional digital execution. We saw too many businesses with incredible potential held back by slow,
+          outdated, or ineffective websites. Our mission is to empower brands by building web experiences that are not
+          only beautiful but also strategically engineered for performance, engagement, and growth. From day one, we've
+          been driven by a passion for clean code, user-centric design, and measurable results.</p>
+      </div>
+
+      <div class="about-page">
+        <h3>Our Core Philosophy</h3>
+        <div class="philosophy-cards">
+          <div class="philosophy-card">
+            <h4>Innovation First</h4>
+            <p>We constantly explore new technologies and creative strategies to ensure your project is modern,
+              future-proof, and stands out from the competition.</p>
+            <a class="philosophy-btn" href="#contact">contact now</a>
+          </div>
+          <div class="philosophy-card">
+            <h4>Co-creation</h4>
+            <p>We believe best results come from working together. We treat our clients as partners, maintaining
+              transparent communication throughout the entire process.</p>
+            <a class="philosophy-btn" href="#contact">contact now</a>
+          </div>
+          <div class="philosophy-card">
+            <h4>User-Centric Design</h4>
+            <p>Every line of code and every design element is crafted with the end-user in mind, ensuring an intuitive,
+              engaging, and seamless experience.</p>
+            <a class="philosophy-btn" href="#contact">contact now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- services section -->
+  <section class="services" id="services">
+    <div class="services-container">
+      <p class="section-pre-title">::: WHAT WE'RE OFFERING :::</p>
+      <h2 class="about-title">Get the best IT Technology Services & Solutions</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="card-image-container"
+            style="background-image: url('https://images.unsplash.com/photo-1600880292203-3def3bb70a0a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600');">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <p>Empower governance with smart digital solutions that enhance transparency, citizen engagement, and
+              operational efficiency through modern technology and innovation.</p>
+            <h3>GovTech & Digital Transformation</h3>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="card-image-container"
+            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600');">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <p>Unlock growth and efficiency with cutting-edge Artificial Intelligence and Cloud-based solutions tailored
+              to your business needs, from automation to data analytics.</p>
+            <h3>AI & Cloud Solutions</h3>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="card-image-container"
+            style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600');">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <p>Build powerful, scalable, and user-friendly applications with end-to-end Full-Stack Development, covering
+              everything from front-end design to back-end systems and databases.</p>
+            <h3>Full-Stack Development</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="tech-intro">
+      <p>::: TECHNOLOGIES USED :::</p>
+      <h2>
+        Diverse tech stack to deliver solutions
+      </h2>
+    </div>
+    <div class="tech-slider-wrapper">
+      <div class="tech-icons-container">
+        <div class="tech-icon-item"><i class="devicon-react-original"></i>
+          <p>React</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-nextjs-original"></i>
+          <p>Next.js</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-nodejs-plain"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-typescript-plain"></i>
+          <p>TypeScript</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-graphql-plain"></i>
+          <p>GraphQL</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-postgresql-plain"></i>
+          <p>PostgreSQL</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-docker-plain"></i>
+          <p>Docker</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-figma-plain"></i>
+          <p>Figma</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-react-original"></i>
+          <p>React</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-nextjs-original"></i>
+          <p>Next.js</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-nodejs-plain"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-typescript-plain"></i>
+          <p>TypeScript</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-graphql-plain"></i>
+          <p>GraphQL</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-postgresql-plain"></i>
+          <p>PostgreSQL</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-docker-plain"></i>
+          <p>Docker</p>
+        </div>
+        <div class="tech-icon-item"><i class="devicon-figma-plain"></i>
+          <p>Figma</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- portfolio section -->
+  <section class="portfolio" id="portfolio">
+    <p class="section-pre-title">::: WHY CHOOSE US ? :::</p>
+    <h2 class="portfolio-title">We don't believe in big talks or empty promises. At BreekCode, we let our work speak
+      louder than words.</h2>
+      <h2 class="section-pre-title" style="font-size: x-large; margin-top: 50px;">OUR WORKS</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img class="portfolio-image" src="./photos/project 1.png" alt="Project 1">
+        <div class="portfolio-overlay">
+          <h3>Project One</h3>
+          <p>A modern e-commerce platform with seamless user experience and robust backend.</p>
+          <a href="#" class="know-more-link">Know More</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img class="portfolio-image" src="./photos/Screenshot 2025-10-02 at 11.42.21 PM.png" alt="Project 2">
+        <div class="portfolio-overlay">
+          <h3>Project Two</h3>
+          <p>An innovative SaaS application designed to streamline business operations.</p>
+          <a href="#" class="know-more-link">Know More</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img class="portfolio-image" src="./photos/Screenshot 2025-10-02 at 11.42.43 PM.png" alt="Project 3">
+        <div class="portfolio-overlay">
+          <h3>Project Three</h3>
+          <p>A dynamic portfolio website showcasing creative work with interactive elements.</p>
+          <a href="#" class="know-more-link">Know More</a>
+        </div>
+      </div>
+      <div>
+       <a href=""><p class="section-pre-title">see more of our work</p></a> 
+      </div>
+  </section>
+
+  <!-- contact section -->
+  <div class="contact" id="contact">
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h1>Let's Connect</h1>
+          <p>📍 Location: New Delhi, India</p>
+          <p>📧 Email: Vedaaant0307@gmail.com</p>
+          <p>📞 Phone: +91 7380416747</p>
+          <p>💻 Let's build something amazing together!</p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>BreekCodes</h3>
+        <p>Crafting modern web experiences that drive business growth.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+          <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+          <a href="https://youtube.com" target="_blank">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BreekCodes | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
