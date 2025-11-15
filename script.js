@@ -36,6 +36,40 @@
       let b = Math.round(c1.b + (c2.b - c1.b) * factor);
       return `rgb(${r}, ${g}, ${b})`;
     }
+    document.addEventListener('DOMContentLoaded', () => {
+
+  // Get the two elements we need
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const navLinksList = document.getElementById('nav-links-list');
+
+  // Make sure both elements exist before adding the listener
+  if (menuBtn && navLinksList) {
+    
+    // Add the click event listener to the button
+    menuBtn.addEventListener('click', () => {
+      
+      // 1. Toggle the .is-open class on the <ul> to show/hide it
+      navLinksList.classList.toggle('is-open');
+      
+      // 2. Toggle the .is-active class on the <button> for the "X" animation
+      menuBtn.classList.toggle('is-active');
+    });
+  }
+  
+  // (Optional but recommended) Close the menu when a link is clicked
+  const navLinks = navLinksList.querySelectorAll('a');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Check if the mobile menu is open
+      if (navLinksList.classList.contains('is-open')) {
+        navLinksList.classList.remove('is-open');
+        menuBtn.classList.remove('is-active');
+      }
+    });
+  });
+
+});
 
     // Set initial background
     // document.body.style.background = `linear-gradient(135deg, #000000, #0a0a0a, #050505)`;
