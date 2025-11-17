@@ -1,7 +1,7 @@
      // --- Add this to the TOP of script.js ---
 const SUPABASE_URL = 'https://bnlgxhchknvakoanmnlr.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJubGd4aGNoa252YWtvYW5tbmxyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzNzI5NzQsImV4cCI6MjA3ODk0ODk3NH0.qWvfiy2G7OnLCTIqCNdkLbKhm6AI3uuZ7micVcSzDJo';
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = supabase.createClient(https://bnlgxhchknvakoanmnlr.supabase.co, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJubGd4aGNoa252YWtvYW5tbmxyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzNzI5NzQsImV4cCI6MjA3ODk0ODk3NH0.qWvfiy2G7OnLCTIqCNdkLbKhm6AI3uuZ7micVcSzDJo);
 // -----------------------------------------
     function openPopup() {
       document.getElementById("popupOverlay").style.display = "flex";
