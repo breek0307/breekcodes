@@ -55,33 +55,32 @@
         <input type="checkbox" id="popup-hire">
         <input type="checkbox" id="popup-thanks">
 
-        <div class="popup popup-hire">
-          <div class="popup-content">
-            <h2>Book a Consultation</h2>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Company Email" required>
-            <input type="text" placeholder=" Your Company / Organization">
-            <select required>
-              <option value="" disabled selected>Project Type</option>
-              <option>Website</option>
-              <option>Web App</option>
-              <option>Mobile App</option>
-              <option>E-commerce</option>
-              <option>Other</option>
-            </select>
-            <select required>
-              <option value="" disabled selected>Budget Range</option>
-              <option>&lt; $1000</option>
-              <option>$1000 – $5000</option>
-              <option>$5000+</option>
-            </select>
-            <textarea rows="4" placeholder="Describe your project..." required></textarea>
+    <div class="popup popup-hire">
+     <form id="consultation-form" class="popup-content">
+       <h2>Book a Consultation</h2>
 
-            <label style="border-top: 20px;" for="popup-thanks" class="btn"
-              onclick="document.getElementById('popup-hire').checked=false; ">Get Free Consultation</label>
-          </div>
-        </div>
+       <input name="full_name" type="text" placeholder="Full Name" required>
+       <input name="company_email" type="email" placeholder="Company Email" required>
+       <input name="company_name" type="text" placeholder=" Your Company / Organization">
+       <select name="project_type" required>
+         <option value="" disabled selected>Project Type</option>
+         <option>Website</option>
+         <option>Web App</option>
+         <option>Mobile App</option>
+         <option>E-commerce</option>
+         <option>Other</option>
+       </select>
+       <select name="budget_range" required>
+         <option value="" disabled selected>Budget Range</option>
+         <option>&lt; $1000</option>
+         <option>$1000 – $5000</option>
+         <option>$5000+</option>
+       </select>
+      <textarea name="project_description" rows="4" placeholder="Describe your project..." required></textarea>
 
+    <button type="submit" class="btn" style="border-top: 20px;">Get Free Consultation</button>
+    </form>
+  </div>
         <div class="popup popup-thanks">
           <div class="popup-content">
             <h2>Thank You!</h2>
@@ -290,13 +289,13 @@
           <p>📞 Phone: +91 7380416747</p>
           <p>💻 Let's build something amazing together!</p>
         </div>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="6" placeholder="Your Message" required></textarea>
+        <form id="contact-form" class="contact-form">
+          <input name="name" type="text" placeholder="Your Name" required />
+          <input name="email" type="email" placeholder="Your Email" required />
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
+       
       </div>
     </section>
   </div>
@@ -329,6 +328,7 @@
       <p>© 2025 BreekCodes | All Rights Reserved</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 
