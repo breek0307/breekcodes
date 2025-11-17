@@ -1,4 +1,8 @@
-
+     // --- Add this to the TOP of script.js ---
+const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
+const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// -----------------------------------------
     function openPopup() {
       document.getElementById("popupOverlay").style.display = "flex";
     }
@@ -85,3 +89,62 @@
 
     //   document.body.style.background = `linear-gradient(135deg, ${startColor}, ${midColor}, ${endColor})`;
     // });
+
+   // --- Add this to the BOTTOM of script.js ---
+
+// Wait for the page to load before finding the forms
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // === 1. Handle Consultation Form ===
+  const consultForm = document.getElementById('consultation-form');
+  
+  if (consultForm) {
+    consultForm.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Stop the form from reloading the page
+      
+      // Get all form data
+      const formData = new FormData(consultForm);
+      const dataObject = Object.fromEntries(formData.entries());
+
+      // Send data to Supabase
+      const { error } = await supabase
+        .from('consultations')
+        .insert(dataObject);
+      
+      if (error) {
+        console.error('Error inserting data:', error);
+        alert('There was an error sending your request. Please try again.');
+      } else {
+        // Success! Show your 'Thank You' popup
+        document.getElementById('popup-hire').checked = false; // Close consult popup
+        document.getElementById('popup-thanks').checked = true; // Open thanks popup
+        consultForm.reset(); // Clear the form
+      }
+    });
+  }
+
+  // === 2. Handle Contact Form ===
+  const contactForm = document.getElementById('contact-form');
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const dataObject = Object.fromEntries(formData.entries());
+
+      const { error } = await supabase
+        .from('messages')
+        .insert(dataObject);
+        
+      if (error) {
+        console.error('Error inserting data:', error);
+        alert('There was an error sending your message.');
+      } else {
+        // Success! Show a simple alert and clear the form
+        alert('Message sent successfully! Thank you.');
+        contactForm.reset();
+      }
+    });
+  }
+});
