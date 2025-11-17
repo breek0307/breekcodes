@@ -289,6 +289,7 @@ input[type="checkbox"] {
 
 
 .popup-content {
+  position: relative;
   background: #1e1e1e;
   padding: 30px;
   border-radius: 12px;
@@ -362,6 +363,24 @@ input[type="checkbox"] {
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
+
+/* === ADD THIS NEW RULE === */
+.popup-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #888;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.popup-close-btn:hover {
+  color: #fff;
+}
+/* ========================= */
 
 /* About Section */
 .about-section {
