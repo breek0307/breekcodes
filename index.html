@@ -4,474 +4,684 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BreekCodes - Web Development Company</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>BreekCodes — Web Design & Development for US Businesses</title>
+  <meta name="description" content="BreekCodes builds high-performance websites for US businesses — SaaS companies, law firms, clinics, contractors, and startups. Custom design. Fast delivery. Real ROI." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <a href="#home"><img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767556815/b1_uympyh.png"
-          alt="BreekCodes Logo"></a>
-    </div>
-    <nav class="nav-pill" id="main-nav">
-      <ul class="nav-links" id="nav-links-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Our Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <a class="btn-join" href="https://calendly.com/breekcodes/30min" target="_blank">Book a Call</a>
-      </div>
-    </nav>
-    <div class="header-right">
-      <a class="direct-icon" href="https://wa.me/918447540870" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a class="direct-icon" href="https://www.instagram.com/breek_codes/" target="_blank"
-        aria-label="Follow on Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a class="direct-icon" href="https://www.linkedin.com/company/breekcodes/" target="_blank"
-        aria-label="Connect on LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-    </div>
-    <button id="mobile-menu-btn" aria-label="Open navigation menu">
 
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="header" id="site-header">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="BreekCodes Home">
+        <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767556815/b1_uympyh.png" alt="BreekCodes" />
+      </a>
+
+      <nav class="nav-links" id="nav-links-list" aria-label="Main navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/918447540870" target="_blank" rel="noopener" class="nav-social" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-nav-cta" id="nav-cta-btn">
+          Book a Call
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Websites that get you more leads</h2>
-    <p>
-      Stop losing business to bad design. We build high-converting, professional websites for local businesses —
-      delivered in 7 days.
-    </p>
-    <div class="buttons">
-      <div>
-        <label for="popup-hire" class="btn-join">Book a Consultation</label>
-        <input type="checkbox" id="popup-hire">
-        <input type="checkbox" id="popup-thanks">
-        <div class="popup popup-hire">
-          <form id="consultation-form" class="popup-content">
-            <label for="popup-hire" class="popup-close-btn">&times;</label>
-            <h5 class="popup-title">Book a Consultation</h5>
-            <div class="input-group">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="input-group">
-              <input type="tel" name="phone" placeholder="Phone Number" required>
-              <select name="service_type" required>
-                <option value="" disabled selected>Service Interested In</option>
-                <option value="Website Development">Website Development</option>
-                <option value="App Development">App Development</option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="SEO & Marketing">SEO & Marketing</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <textarea name="project_description" rows="4" placeholder="Describe your project..." required></textarea>
-            <button type="submit" class="btn">Get Free Consultation</button>
-          </form>
-        </div>
-        <div class="popup popup-thanks">
-          <div class="popup-content">
-            <h2>Thank You!</h2>
-            <p>Thank you for connecting with us!<br>We will contact you very soon 🚀</p>
-            <label for="popup-thanks" class="close-btn">Close</label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <!-- Header -->
-      <h2 class="about-title">About Breekcodes</h2>
-      <p class="about-tagline">We help local businesses get online and turn visitors into customers.</p>
-
-      <!-- Core Description -->
-      <div class="about-content-block">
-        <p>Breekcodes is a web development agency focused on building fast, modern, and conversion-driven websites for
-          local businesses. We work with cafes, gyms, salons, clinics, and service-based brands that need a strong
-          online presence without wasting months or money.</p>
-        <p>Our goal is simple: build websites that look professional and bring real inquiries.</p>
-      </div>
-
-      <!-- Features & Steps Grid -->
-      <div class="about-details-grid">
-        <!-- Why Choose Us -->
-        <div class="about-card why-us">
-          <h3>Why Choose Breekcodes</h3>
-          <ul class="about-list">
-            <li><i class="fa-solid fa-check-circle"></i> Transparent pricing, no hidden costs</li>
-            <li><i class="fa-solid fa-check-circle"></i> Fast delivery (3–7 days)</li>
-            <li><i class="fa-solid fa-check-circle"></i> Mobile-first, modern design</li>
-            <li><i class="fa-solid fa-check-circle"></i> Built for WhatsApp and lead generation</li>
-            <li><i class="fa-solid fa-check-circle"></i> Direct communication, no middlemen</li>
-          </ul>
-        </div>
-
-        <!-- How It Works -->
-        <div class="about-card how-it-works">
-          <h3>How It Works</h3>
-          <div class="steps-flow">
-            <div class="step-item">
-              <span class="step-number">1</span>
-              <p>We understand your business</p>
-            </div>
-            <div class="step-item">
-              <span class="step-number">2</span>
-              <p>We design and build your website</p>
-            </div>
-            <div class="step-item">
-              <span class="step-number">3</span>
-              <p>You review and approve</p>
-            </div>
-            <div class="step-item">
-              <span class="step-number">4</span>
-              <p>We launch and support</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="about-cta-container">
-        <a href="#contact" class="btn-primary-about">Get Your Website</a>
-        <a href="https://wa.me/918208226012" target="_blank" class="btn-secondary-about">
-          Talk to Us on WhatsApp <i class="fa-brands fa-whatsapp"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="offer" id="offer">
-    <div class="offer-container">
-      <p class="section-pre-title">::: WHAT WE OFFER :::</p>
-      <h2 class="about-title">We offer wide range of sevices</h2>
-      
-    </div>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <div class="services-container">
-      <p class="section-pre-title">::: OUR PACKAGES :::</p>
-      <h2 class="about-title">Choose Your Growth Plan</h2>
-
-      <!-- New Pricing Plans Grid -->
-      <div class="services-plans-grid">
-
-        <!-- Plan 1: Get Online Fast -->
-        <article class="service-plan-card">
-          <div class="plan-header">
-            <div class="plan-icon">🟢</div>
-            <h3>Get Online Fast</h3>
-            <div class="plan-price">₹5,999</div>
-          </div>
-          <ul class="plan-features">
-            <li><i class="fa-solid fa-check"></i> 1-page responsive website</li>
-            <li><i class="fa-solid fa-check"></i> WhatsApp button & contact form</li>
-            <li><i class="fa-solid fa-check"></i> Google Maps embed</li>
-            <li><i class="fa-solid fa-check"></i> Basic SEO setup</li>
-            <li><i class="fa-solid fa-check"></i> Delivery in 3–4 days</li>
-          </ul>
-          <div class="plan-footer">
-            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Get%20Online%20Fast%20plan"
-              target="_blank" class="plan-btn">Get Started</a>
-          </div>
-        </article>
-
-        <!-- Plan 2: Professional Presence -->
-        <article class="service-plan-card featured-plan">
-          <div class="plan-header">
-            <div class="plan-icon">🔵</div>
-            <h3>Professional Presence</h3>
-            <div class="plan-price">₹14,999</div>
-          </div>
-          <ul class="plan-features">
-            <li><i class="fa-solid fa-check"></i> 4–5 page modern website</li>
-            <li><i class="fa-solid fa-check"></i> Mobile + tablet optimized</li>
-            <li><i class="fa-solid fa-check"></i> WhatsApp & call CTAs</li>
-            <li><i class="fa-solid fa-check"></i> On-page SEO</li>
-            <li><i class="fa-solid fa-check"></i> Google Analytics integration</li>
-            <li><i class="fa-solid fa-check"></i> Delivery in 7 days</li>
-          </ul>
-          <div class="plan-footer">
-            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Professional%20Presence%20plan"
-              target="_blank" class="plan-btn">Get Started</a>
-          </div>
-        </article>
-
-        <!-- Plan 3: Lead Machine -->
-        <article class="service-plan-card">
-          <div class="plan-header">
-            <div class="plan-icon">🔴</div>
-            <h3>Lead Machine</h3>
-            <div class="plan-price">₹25,000+</div>
-          </div>
-          <ul class="plan-features">
-            <li><i class="fa-solid fa-check"></i> High-conversion landing page</li>
-            <li><i class="fa-solid fa-check"></i> Lead capture forms</li>
-            <li><i class="fa-solid fa-check"></i> WhatsApp automation logic</li>
-            <li><i class="fa-solid fa-check"></i> Basic CRM integration (Google Sheets)</li>
-            <li><i class="fa-solid fa-check"></i> Conversion tracking setup</li>
-          </ul>
-          <div class="plan-footer">
-            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Lead%20Machine%20plan"
-              target="_blank" class="plan-btn">Get Started</a>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Custom Plan Button -->
-      <div class="custom-plan-container">
-        <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20a%20Custom%20Website%20Solution"
-          target="_blank" class="btn-custom">
-          Need a Custom Solution?
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <div class="tech-stack-section">
-    <div class="tech-intro">
-      <h2>Technologies We Use</h2>
-      <p>
-        We leverage the latest and most reliable technologies to build scalable, secure, and high-performance
-        applications.
-      </p>
-    </div>
-    <div class="tech-marquee">
-      <div class="tech-icons-container">
-        <!-- Original Icons -->
-        <div class="tech-icon-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-        <div class="tech-icon-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-        <div class="tech-icon-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-        <div class="tech-icon-item"><i class="devicon-react-original colored"></i><span>React</span></div>
-        <div class="tech-icon-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
-        <div class="tech-icon-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-        <div class="tech-icon-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
-        <div class="tech-icon-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-        <div class="tech-icon-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-        <!-- Duplicated Icons for continuous scroll -->
-        <div class="tech-icon-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-        <div class="tech-icon-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-        <div class="tech-icon-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-        <div class="tech-icon-item"><i class="devicon-react-original colored"></i><span>React</span></div>
-        <div class="tech-icon-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
-        <div class="tech-icon-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-        <div class="tech-icon-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
-        <div class="tech-icon-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-        <div class="tech-icon-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-      </div>
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <nav class="mobile-nav">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#work" class="mobile-nav-link">Work</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-mobile-cta">Book a Free Call &rarr;</a>
+    <div class="mobile-social-row">
+      <a href="https://www.instagram.com/breek_codes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://wa.me/918447540870" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/company/breekcodes/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
     </div>
   </div>
 
-  <section class="work-section" id="work">
-    <div class="work-container">
-      <h2 class="work-title">Our Work</h2>
-      <p class="work-subtitle">A selection of real projects we’ve designed and built.</p>
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-canvas" aria-hidden="true">
+      <div class="hero-grain"></div>
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-inner">
+
+      <h1 class="hero-headline reveal">
+        Your website should<br>
+        <span class="hero-accent">close deals.</span><br>
+        Not just exist.
+      </h1>
+
+      <p class="hero-sub reveal">
+        We design and build high-performance websites for US businesses.<br>
+        No templates. No shortcuts. Just work that converts.
+      </p>
+
+      <div class="hero-ctas reveal">
+        <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-primary" id="hero-cta-primary">
+          Book a Free Strategy Call
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a href="#work" class="btn-ghost" id="hero-cta-secondary">
+          See Our Work
+        </a>
+      </div>
+
+      <div class="hero-social-proof reveal">
+        <div class="proof-avatars" aria-hidden="true">
+          <span class="avatar av1">R</span>
+          <span class="avatar av2">S</span>
+          <span class="avatar av3">A</span>
+          <span class="avatar av4">M</span>
+        </div>
+        <p><strong>50+ businesses</strong> trust BreekCodes &mdash; across 5 countries</p>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOGOS / TRUST BAR
+  ============================================================ -->
+  <section class="trust-bar" aria-label="Industries served">
+    <div class="container">
+      <p class="trust-label">Trusted by businesses across</p>
+      <div class="trust-industries">
+        <span>SaaS &amp; Tech</span>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Law Firms</span>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Medical Clinics</span>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Real Estate</span>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Contractors</span>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Startups</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROBLEM / SOLUTION
+  ============================================================ -->
+  <section class="problem-section" id="about" aria-labelledby="problem-heading">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-left reveal">
+          <p class="eyebrow">The hard truth</p>
+          <h2 class="section-headline" id="problem-heading">
+            Most business websites<br>are costing you clients.
+          </h2>
+          <p class="body-text">
+            A slow, outdated, or confusing website sends prospects straight to your competitor.
+            You're paying for hosting every month — but getting nothing back.
+          </p>
+          <p class="body-text">
+            We fix that. Every site we build is designed around one thing: getting you more business.
+          </p>
+          <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-primary" id="problem-cta">
+            Let's Talk About Your Site
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="problem-right reveal">
+          <div class="pain-cards">
+            <div class="pain-card">
+              <div class="pain-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h3>Slow load times</h3>
+              <p>53% of visitors leave if a page takes more than 3 seconds. Speed is revenue.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3>Broken on mobile</h3>
+              <p>Most of your customers browse on their phone. A broken mobile site is lost money.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <h3>Invisible on Google</h3>
+              <p>If you're not on page one, you don't exist. SEO built in from day one.</p>
+            </div>
+            <div class="pain-card">
+              <div class="pain-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-arrow-pointer"></i>
+              </div>
+              <h3>No clear next step</h3>
+              <p>Visitors don't know what to do. No CTA, no lead. It's that simple.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES / PACKAGES
+  ============================================================ -->
+  <section class="services-section" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What we build</p>
+        <h2 class="section-headline" id="services-heading">The right website<br>for where you are.</h2>
+        <p class="section-sub">Every project is custom — designed for your business, your market, and your goals.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal" id="plan-starter">
+          <div class="service-card-inner">
+            <div class="service-plan-label">Starter</div>
+            <h3 class="service-plan-name">Get Online Fast</h3>
+            <div class="service-price">
+              <span class="price-from">Starting at</span>
+              <span class="price-amount">$499</span>
+            </div>
+            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Get%20Online%20Fast%20plan" target="_blank" rel="noopener" class="btn-service">
+              Get Started
+            </a>
+            <div class="service-divider"></div>
+            <p class="service-includes-label">Starter includes:</p>
+            <ul class="service-features" aria-label="Features included">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Single-page responsive site</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Click-to-call &amp; WhatsApp button</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Google Maps embed</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>On-page SEO setup</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Delivered in 3&ndash;4 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card service-card--featured reveal" id="plan-pro">
+          <div class="service-card-inner">
+            <div class="featured-label" aria-label="Most popular plan">Most Popular</div>
+            <div class="service-plan-label service-plan-label--accent">Professional</div>
+            <h3 class="service-plan-name">Business Website</h3>
+            <div class="service-price">
+              <span class="price-from">Starting at</span>
+              <span class="price-amount">$1,499</span>
+            </div>
+            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Business%20Website%20plan" target="_blank" rel="noopener" class="btn-service btn-service--featured">
+              Get Started
+            </a>
+            <div class="service-divider"></div>
+            <p class="service-includes-label">All of Starter, and:</p>
+            <ul class="service-features" aria-label="Features included">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>4&ndash;6 custom-designed pages</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Mobile-first, performance-optimized</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Lead capture forms &amp; CTAs</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full on-page SEO</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Google Analytics &amp; Search Console</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Delivered in 7 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal" id="plan-leadmachine">
+          <div class="service-card-inner">
+            <div class="service-plan-label">Growth</div>
+            <h3 class="service-plan-name">Lead Machine</h3>
+            <div class="service-price">
+              <span class="price-from">Starting at</span>
+              <span class="price-amount">$2,999</span>
+            </div>
+            <a href="https://wa.me/918208226012?text=I'm%20interested%20in%20the%20Lead%20Machine%20plan" target="_blank" rel="noopener" class="btn-service">
+              Get Started
+            </a>
+            <div class="service-divider"></div>
+            <p class="service-includes-label">All of Professional, and:</p>
+            <ul class="service-features" aria-label="Features included">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Custom conversion landing page</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Advanced lead capture flows</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>CRM integration</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Conversion tracking &amp; heatmaps</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>A/B testing setup</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card service-card--custom reveal" id="plan-custom">
+          <div class="service-card-inner">
+            <div class="service-plan-label">Enterprise</div>
+            <h3 class="service-plan-name">Custom</h3>
+            <div class="service-price service-price--talk">
+              <span class="price-talk">Let's talk</span>
+            </div>
+            <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-service btn-service--custom">
+              Book a Call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <div class="service-divider"></div>
+            <p class="service-includes-label">All features, and:</p>
+            <ul class="service-features" aria-label="Features included">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>E-commerce &amp; web apps</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full brand &amp; identity design</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Complex API &amp; CRM integrations</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Ongoing support retainer</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Custom timeline &amp; pricing</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO / WORK
+  ============================================================ -->
+  <section class="work-section" id="work" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-headline" id="work-heading">Built to perform.<br>Designed to impress.</h2>
+        <p class="section-sub">Every project starts with your goals. Here's what that looks like in practice.</p>
+      </div>
 
       <div class="work-grid">
 
-        <!-- Project 1: Gym Website -->
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767555626/gym_awlhzd.png"
-              alt="Gym Website Design" loading="lazy" class="project-img">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Gym Website</h3>
-            <p class="project-desc">A modern fitness website designed to showcase services and drive membership
-              inquiries.</p>
-            <div class="project-tags">
-              <span class="tag">Gym</span>
-              <span class="tag">Local Business</span>
-              <span class="tag">Lead Generation</span>
+        <article class="project-card reveal" id="project-gym">
+          <a href="https://breek-fitness.onrender.com" target="_blank" rel="noopener" class="project-link" aria-label="View Breek Fitness live site">
+            <div class="project-image-wrap">
+              <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767555626/gym_awlhzd.png"
+                alt="Breek Fitness gym website design" loading="lazy" width="600" height="400">
+              <div class="project-overlay" aria-hidden="true">
+                <span>View Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
             </div>
-            <a href="https://breek-fitness.onrender.com" target="_blank" class="project-btn">View Website</a>
-          </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Fitness</span>
+                <span class="tag">Lead Generation</span>
+              </div>
+              <h3>Breek Fitness</h3>
+              <p>Membership acquisition site for a local gym. Bold, high-energy design with a clear path to sign-up.</p>
+            </div>
+          </a>
         </article>
 
-        <!-- Project 2: Unfold India -->
-        <article class="project-card">
-          <div class="project-image-container">
-            <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767555626/unfold_india_yelgvh.png"
-              alt="Unfold India Business Website" loading="lazy" class="project-img">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Unfold India – Business Website</h3>
-            <p class="project-desc">A clean and professional business website built to establish online presence and
-              brand credibility.</p>
-            <div class="project-tags">
-              <span class="tag">Business Website</span>
-              <span class="tag">Brand Identity</span>
-              <span class="tag">Responsive</span>
+        <article class="project-card reveal" id="project-unfoldindia">
+          <a href="https://real-unfoldindia-8u38.onrender.com" target="_blank" rel="noopener" class="project-link" aria-label="View Unfold India live site">
+            <div class="project-image-wrap">
+              <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767555626/unfold_india_yelgvh.png"
+                alt="Unfold India business website design" loading="lazy" width="600" height="400">
+              <div class="project-overlay" aria-hidden="true">
+                <span>View Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
             </div>
-            <a href="https://real-unfoldindia-8u38.onrender.com" target="_blank" class="project-btn">View Website</a>
-          </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Business</span>
+                <span class="tag">Brand Identity</span>
+              </div>
+              <h3>Unfold India</h3>
+              <p>A professional business website built to establish credibility and attract enterprise clients.</p>
+            </div>
+          </a>
         </article>
 
-        <!-- Project 3: Personal Portfolio -->
-        <article class="project-card">
-          <div class="project-image-container">
-            <img
-              src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767635014/Screenshot_2026-01-05_at_11.09.17_PM_ivun1x.png"
-              alt="Personal Portfolio Website" loading="lazy" class="project-img">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Personal Portfolio Website</h3>
-            <p class="project-desc">A personal portfolio website created to showcase projects, skills, and experience in
-              a clean layout.</p>
-            <div class="project-tags">
-              <span class="tag">Portfolio</span>
-              <span class="tag">Personal Brand</span>
-              <span class="tag">Web Design</span>
+        <article class="project-card reveal" id="project-portfolio">
+          <a href="https://portfolio-8p5b.onrender.com" target="_blank" rel="noopener" class="project-link" aria-label="View personal portfolio live site">
+            <div class="project-image-wrap">
+              <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767635014/Screenshot_2026-01-05_at_11.09.17_PM_ivun1x.png"
+                alt="Personal portfolio website design" loading="lazy" width="600" height="400">
+              <div class="project-overlay" aria-hidden="true">
+                <span>View Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
             </div>
-            <a href="https://portfolio-8p5b.onrender.com" target="_blank" class="project-btn">View Website</a>
-          </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Portfolio</span>
+                <span class="tag">Personal Brand</span>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>Minimal, polished portfolio for a freelance professional. Showcases work with quiet confidence.</p>
+            </div>
+          </a>
         </article>
 
       </div>
 
-      <div class="work-action-container">
-        <a href="./portfolio.html" class="btn-custom">Show More Projects</a>
+      <div class="work-footer reveal">
+        <a href="./portfolio.html" class="btn-ghost" id="work-more-btn">View All Projects &rarr;</a>
       </div>
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
-    <div class="contact-container-split">
-      <!-- Left: Info -->
-      <div class="contact-left">
-        <p class="section-tag">/ GET IN TOUCH /</p>
-        <h1>We are always ready to help you and answer your questions</h1>
-        <p class="contact-desc">
-          Have a project in mind? Let's build something amazing together. Reach out to us for a free consultation.
+  <!-- ============================================================
+       PROCESS
+  ============================================================ -->
+  <section class="process-section" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section-headline" id="process-heading">From first call<br>to live site in days.</h2>
+        <p class="section-sub">A clear, no-surprise process — so you always know what's happening and when.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal" id="step-discovery">
+          <div class="step-number" aria-hidden="true">01</div>
+          <div class="step-content">
+            <h3>Discovery Call</h3>
+            <p>We spend 30 minutes understanding your business, your customers, and what you need the site to do. No jargon. No sales pitch.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" id="step-design">
+          <div class="step-number" aria-hidden="true">02</div>
+          <div class="step-content">
+            <h3>Design &amp; Build</h3>
+            <p>We design and develop your site from scratch, tailored to your brand. You'll see real progress within 48 hours.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" id="step-review">
+          <div class="step-number" aria-hidden="true">03</div>
+          <div class="step-content">
+            <h3>Review &amp; Refine</h3>
+            <p>You give feedback, we implement it. Unlimited revisions until the site is exactly what you envisioned. No extra charges.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" id="step-launch">
+          <div class="step-number" aria-hidden="true">04</div>
+          <div class="step-content">
+            <h3>Launch &amp; Support</h3>
+            <p>We go live and stay available. Long after launch, you have a team to call when you need updates or have questions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-cta reveal">
+        <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-primary" id="process-cta-btn">
+          Start with a Free Call
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Client results</p>
+        <h2 class="section-headline" id="testimonials-heading">What our clients say.</h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <figure class="testimonial-card reveal" id="testimonial-1">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <blockquote>
+            "We went from zero online presence to 3&ndash;5 qualified inquiries a week within a month of launching. The site looks better than competitors 10x our size."
+          </blockquote>
+          <figcaption class="testimonial-author">
+            <div class="author-avatar author-avatar--1" aria-hidden="true">R</div>
+            <div>
+              <span class="author-name">Rahul Mehta</span>
+              <span class="author-role">Owner, Local Fitness Studio &mdash; Mumbai</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial-card reveal" id="testimonial-2">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <blockquote>
+            "Fast, professional, and exactly what I needed. My site was live in 5 days and clients are already complimenting how polished it looks."
+          </blockquote>
+          <figcaption class="testimonial-author">
+            <div class="author-avatar author-avatar--2" aria-hidden="true">S</div>
+            <div>
+              <span class="author-name">Sarah Collins</span>
+              <span class="author-role">Founder, Boutique Salon &mdash; Toronto</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial-card reveal" id="testimonial-3">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+          </div>
+          <blockquote>
+            "I spent months trying to build my own site. BreekCodes did in one week what I couldn't do in six. The ROI was immediate."
+          </blockquote>
+          <figcaption class="testimonial-author">
+            <div class="author-avatar author-avatar--3" aria-hidden="true">A</div>
+            <div>
+              <span class="author-name">Arjun Sharma</span>
+              <span class="author-role">CEO, Digital Startup &mdash; Bangalore</span>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FINAL CTA BAND
+  ============================================================ -->
+  <section class="cta-band" id="cta-band" aria-label="Call to action">
+    <div class="cta-band-canvas" aria-hidden="true">
+      <div class="cta-band-grain"></div>
+      <div class="cta-band-glow"></div>
+    </div>
+    <div class="container">
+      <div class="cta-band-inner reveal">
+        <p class="eyebrow eyebrow--light">Ready to grow?</p>
+        <h2 class="cta-band-headline">
+          Let's build a website<br>that works as hard as you do.
+        </h2>
+        <p class="cta-band-sub">
+          30-minute call. No commitment. No pressure.<br>
+          Just an honest conversation about your business and what it needs.
         </p>
-
-        <div class="contact-details-grid">
-          <div class="contact-detail-item">
-            <h4>Call Us</h4>
-            <p>+918447540870</p>
-          </div>
-          <div class="contact-detail-item">
-            <h4>Our Location</h4>
-            <p>New Delhi, India</p>
-          </div>
-          <div class="contact-detail-item">
-            <h4>Email</h4>
-            <p>breekworks@gmail.com</p>
-          </div>
-          <div class="contact-detail-item">
-            <h4>Social Network</h4>
-            <div class="mini-socials">
-              <a href="https://www.instagram.com/breek_codes/" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a>
-              <a href="https://wa.me/918447540870" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="https://www.linkedin.com/company/breekcodes/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Form -->
-      <div class="contact-right">
-        <div class="contact-form-card">
-          <h2>Get in Touch</h2>
-          <p>Define your goals and see how we can add value.</p>
-          <form class="new-contact-form" id="contact-form">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Full Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="form-group">
-              <input type="text" name="subject" placeholder="Subject">
-            </div>
-            <div class="form-group">
-              <textarea name="message" rows="4" placeholder="Message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message &rarr;</button>
-          </form>
+        <div class="cta-band-actions">
+          <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-white" id="final-cta-btn">
+            Book Your Free Call
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/918447540870" target="_blank" rel="noopener" class="btn-ghost-white" id="final-whatsapp-btn">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            Chat on WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="new-footer">
-    <div class="footer-top-bar">
-      <div class="footer-logo">BreekCodes</div>
-      <a href="#home" class="back-to-top-btn">BACK TO TOP &uarr;</a>
-    </div>
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
 
-    <div class="footer-grid">
-      <!-- Card 1: Brand & CTA (Large Left) -->
-      <div class="footer-card brand-card">
-        <h2>Building Digital Empires</h2>
-        <p>Helping local businesses scale with high-converting websites and smart automation.</p>
-        <a href="https://calendly.com/breekcodes/30min" target="_blank" class="footer-cta-btn">BOOK A CALL ></a>
+        <div class="contact-info reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="section-headline" id="contact-heading">Have a project<br>in mind?</h2>
+          <p class="body-text">Tell us what you're building and what you need it to do. We'll respond with a clear plan and a fair quote — usually within 24 hours.</p>
+
+          <div class="contact-details">
+            <a href="tel:+918447540870" class="contact-detail-row">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>+91 84475 40870</span>
+            </a>
+            <a href="mailto:breekworks@gmail.com" class="contact-detail-row">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>breekworks@gmail.com</span>
+            </a>
+            <div class="contact-detail-row">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>New Delhi, India &mdash; Serving clients globally</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/breek_codes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/918447540870" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/breekcodes/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <input type="checkbox" id="popup-thanks" aria-hidden="true">
+
+          <div class="contact-form-card">
+            <h3>Send us a message</h3>
+            <p>We respond within 24 hours.</p>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-name" class="sr-only">Your name</label>
+                  <input type="text" name="name" id="contact-name" placeholder="Your name" required autocomplete="name">
+                </div>
+                <div class="form-field">
+                  <label for="contact-email" class="sr-only">Email address</label>
+                  <input type="email" name="email" id="contact-email" placeholder="Email address" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="contact-phone" class="sr-only">Phone number</label>
+                <input type="tel" name="phone" id="contact-phone" placeholder="Phone number (optional)" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="contact-service" class="sr-only">Service type</label>
+                <select name="service_type" id="contact-service" required>
+                  <option value="" disabled selected>What do you need?</option>
+                  <option value="Website Development">Website Development</option>
+                  <option value="App Development">App Development</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="SEO & Marketing">SEO &amp; Marketing</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="contact-message" class="sr-only">Project description</label>
+                <textarea name="project_description" id="contact-message" rows="4" placeholder="Tell us about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">
+                Send Message
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="popup popup-thanks" role="dialog" aria-modal="true" aria-labelledby="popup-thanks-title">
+            <div class="popup-content">
+              <div class="popup-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+              <h2 id="popup-thanks-title">Message Sent</h2>
+              <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+              <label for="popup-thanks" class="btn-primary" style="cursor:pointer; display:inline-flex; align-items:center; justify-content:center;">Close</label>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
 
-      <!-- Card 2: Links (Middle) -->
-      <div class="footer-card links-card">
-        <div class="links-column">
-          <h4>EXPLORE</h4>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo-link" aria-label="BreekCodes home">
+            <img src="https://res.cloudinary.com/dkqyscpeq/image/upload/v1767556815/b1_uympyh.png" alt="BreekCodes" />
+          </a>
+          <p>We build websites that make businesses grow.<br>Fast delivery. Measurable results.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/breek_codes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/918447540870" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/breekcodes/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
           <a href="#home">Home</a>
           <a href="#services">Services</a>
-          <a href="#portfolio">Our Work</a>
+          <a href="#work">Our Work</a>
+          <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </div>
-        <div class="links-column">
-          <h4>LEGAL</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
 
-      <!-- Column 3: Social & Contact (Right Stack) -->
-      <div class="footer-column-right">
-        <!-- Social Card -->
-        <div class="footer-card social-card">
-          <h4>Follow us</h4>
-          <div class="footer-social-icons">
-            <a href="https://www.instagram.com/breek_codes/" target="_blank" aria-label="Instagram"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/918447540870" target="_blank" aria-label="WhatsApp"><i
-                class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/company/breekcodes/" target="_blank" aria-label="LinkedIn"><i
-                class="fa-brands fa-linkedin"></i></a>
-          </div>
-        </div>
-        <!-- Contact Card -->
-        <div class="footer-card contact-card">
+        <div class="footer-links-group">
           <h4>Contact</h4>
-          <p><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
-          <p><i class="fa-solid fa-phone"></i> +918447540870</p>
-          <p><i class="fa-solid fa-envelope"></i> breekworks@gmail.com</p>
+          <a href="tel:+918447540870">+91 84475 40870</a>
+          <a href="mailto:breekworks@gmail.com">breekworks@gmail.com</a>
+          <span>New Delhi, India</span>
+        </div>
+
+        <div class="footer-cta-card">
+          <p>Ready to get started?</p>
+          <a href="https://calendly.com/breekcodes/30min" target="_blank" rel="noopener" class="btn-footer-cta" id="footer-cta-btn">
+            Book a Free Call &rarr;
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom-copyright">
-      &copy; 2024 BreekCodes. All Rights Reserved.
+      <div class="footer-bottom">
+        <span>&copy; 2025 BreekCodes. All rights reserved.</span>
+        <a href="#home" class="back-top" id="back-to-top-btn" aria-label="Back to top">
+          Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
